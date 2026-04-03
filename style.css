@@ -20,6 +20,8 @@ body{
 
 button{
     font-family: poppins, sans-serif;
+    /* Mostra que a área é clicável, oque é indispensavel para a experiência do usuário */
+    cursor: pointer;
 }
 
 header{
