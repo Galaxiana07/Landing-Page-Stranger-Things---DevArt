@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* É usado para colocar fontes externas que não vieram de uma biblioteca */
+@font-face {
+    font-family: "Benguiat";
+    src: url(fontes/Benguiat\ Bold.ttf);
+}
+
 body{
     background-color: #0c0102;
     color: rgba(255, 255, 255, 0.9);
@@ -36,16 +43,56 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 7vw;
+    padding: 0vw 7vw 7vw 7vw;
+    /* 1ª medida é a superior;
+    2ª medida é a direita;
+    3ª medida é a inferior;
+    4ª medida é a esquerda;
+    */
+
+    .esquerda, .direita{
+    /* Já define o width das duas divs de uma única vez */
+        width: 30%;
+    }
 
     .esquerda{
-        width: 30%;
-
         h3{
-            font-size: 20px;
-            font-family: poppins;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        h1{
+            font-size: 3.7vw;
+            font-family: "Benguiat", sans-serif;
         }
     }
 
+    .direita{
+        /* Coloca os itens alinhados um ao lado do outro */
+        display: flex;
+        /* Coloca os itens um abaixo do outro */
+        flex-direction: column;
+        /* Alinha os itens na horizontal */
+        align-items: end;
+        p{
+            font-size: 2vw;
+            margin-bottom: 32px;
+            text-align: end;
+        }
+
+        button{
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            /* Gap é o espaçamento interno entre elementos */
+            gap: 12px;
+            border: none;
+            /* A primeira medida do padding é a parte superior e inferior e a segunda parte são as laterais */
+            padding: 16px 0px;
+            border-bottom: 1px solid white;
+            outline: none;
+        }
+    }
 }
 
