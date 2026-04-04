@@ -16,6 +16,7 @@ body{
     background-color: #0c0102;
     color: rgba(255, 255, 255, 0.9);
     font-family: poppins;
+    overflow-x: hidden;
 }
 
 button{
@@ -197,33 +198,209 @@ footer{
     flex-direction: column;
     align-items: center;
     background-image: url("imagens/bg-footer.webp");
+    background-size: cover;
+    background-position: center;
 
     .conteúdo_footer{
         display: flex;
         width: 100%;
         padding: 7vw;
-    }
 
-    .logo_footer{
+        .logo_footer{
         width: 30%;
          
-        h3{
-            font-size: 24px;
-            font-weight: 500;
-            letter-spacing: 2px;
+            h3{
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 2px;
+            }
+
+            h2{
+                font-size: 3.7vw;
+                font-family: "Benguiat", sans-serif;
+            }
         }
 
-        h2{
-            font-size: 3.7vw;
-            font-family: "Benguiat", sans-serif;
+        .seções_footer{
+            display: flex;
+            flex: 1;
+            justify-content: end;
+            gap: 6%;
+            /* Sempre que se usa a porcentagem ela se refere ao conteiner que ela esta inserida, já o vw se refere a tela inteira */
+            align-items: end;
+
+            h3{
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+
+            .social{
+                ul{
+                    display: flex;
+                    gap: 2px;
+                }
+            }
+        }
+    }   
+
+    .logotipos_footer{
+        width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 4vw;
+    }
+
+    .texto_infinito{
+        width: max-content;
+        display: flex;
+
+        h3{
+            color: rgb(191, 191, 191);
+            font-size: 12vw;
+            font-family: "benguiat", sans-serif;
+            mix-blend-mode: color-dodge;
+            animation: texto_infinito 10s infinite linear;
+            padding-left: 3vw;
+        }
+    }
+}
+
+@keyframes texto_infinito{
+    100%{
+        /* O X sinaliza que a animação vai se mover no eixo X, ou seja, horizontal */
+        transform: translateX(-100%);
+    }
+}
+
+/* MEDIA QUERIES -> podemos criar propriedades para uma largura de tela especifica */
+@media (max-width: 1500px){
+    /* Sempre se atentar a especificidade pois quanto mais especififco for mais força tem */
+    .seção_cidade{
+        padding: 4vw;
+    }
+}
+
+@media (max-width: 1400px){
+    .seção_cidade .cards .card{
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+    }
+}
+
+@media (max-width: 600px){
+    section{
+        padding: 4vw;
+    }
+
+    h2{
+        font-size: 6vw;
+    }
+
+    header h2{
+        font-size: 28px;
+    }
+    .hero{
+        flex-direction: column;
+        padding: 26% 4vw 0;
+
+        .esquerda, .direita{
+            width: 100%;
+        }
+
+        .esquerda{
+            h3, h1{
+                text-align: center;
+            }
+
+            h1{
+                font-size: 10vw;
+            }
+        }
+
+        .direita{
+            align-items: start;
+
+            p{
+                font-size: 5.5vw;
+                text-align: start;
+                margin-bottom: 16px;
+            }
         }
     }
 
-    .seções_footer{
-        display: flex;
-        flex: 1;
-        justify-content: end;
-        gap: 6%;
-        
+    .seção_cidade{
+        margin-top: 80px;
+        button{
+            /* Ocultando o botão */
+            display: none;
+        }
+
+        .cards{
+            margin-top: 20px;
+            flex-direction:  column;
+            gap: 20px;
+
+            .card{
+            width: 100%;
+            }
+        }
+    }
+
+    .seção_depoimentos{
+        .logotipos{
+            img:nth-child(1), img:nth-child(3){
+                width: 20%;
+            }
+
+            img:nth-child(2){
+                width: 40%;
+            }
+        }
+
+        .depoimentos{
+            flex-direction: column;
+            gap: 48px;
+
+            .depoimento{
+                width: 100%;
+            }
+        }
+    }
+
+    .seção_obrigado{
+        margin: 40px 0px 60px;
+        h2{
+            text-align: center;  
+        }
+
+        ul{
+            width: max-content;
+            gap: 32px;
+            animation: texto_infinito 10s infinite linear;
+        }
+    }
+
+    footer{
+        padding-top: 40px;
+        .conteúdo_footer{
+            padding: 4vw;
+            flex-direction: column;
+
+            .logo_footer{
+                width: 100%;
+
+                h2,h3{
+                    text-align: center;
+                }
+
+                h2{
+                    font-size: 12vw;
+                }
+            }
+
+            
+        }
     }
 }
