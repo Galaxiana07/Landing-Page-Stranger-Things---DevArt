@@ -19,6 +19,17 @@
     <main>
         <!-- 1º seção -->
         <section class="hero">
+            <picture>
+                <!-- Serve para renderizar imagens responsivas -->
+                 <!-- Ou seja, se a largura da tela for maior ou igual a 600px, use a imagem mobile e se não, então use a imagem desktop -->
+                 <source media="(min-width: 600px)" srcset="imagens/bg-1-mobile.webp">
+                 <img src="imagens/bg-1.webp" alt>
+            </picture>
+            <picture>
+                <source media="(min-width: 600px)" srcset="imagens/bg-2-mobile.webp">
+                <img src="imagens/bg-2.webp" alt>
+            </picture>
+
             <!-- Div da esquerda -->
             <div class="esquerda">
                 <h3>THE EXPERIENCE</h3>
@@ -95,19 +106,19 @@
         <!-- 4° seção -->
         <section class="seção_obrigado">
             <h2>OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:</h2>
-            <ul>
-                <li>Sidney</li>
-                <li>Rio de Janeiro</li>
-                <li>São Paulo</li>
-                <li>Los Angeles</li>
-                <li>Nova Iorque</li>
-                <li>São Francisco</li>
-                <li>Londres</li>
-                <li>Atlanta</li>
-                <li>Paris</li>
-                <li>Toronto</li>
-                <li>Seattle</li>
-            </ul>
+                <ul>
+                    <li>Sidney</li>
+                    <li>Rio de Janeiro</li>
+                    <li>São Paulo</li>
+                    <li>Los Angeles</li>
+                    <li>Nova Iorque</li>
+                    <li>São Francisco</li>
+                    <li>Londres</li>
+                    <li>Atlanta</li>
+                    <li>Paris</li>
+                    <li>Toronto</li>
+                    <li>Seattle</li>
+                </ul>
         </section>
     </main>
 
