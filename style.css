@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-/* É usado para colocar fontes externas que não vieram de uma biblioteca */
 @font-face {
+    /* É usado para colocar fontes externas que não vieram de uma biblioteca */
     font-family: "Benguiat";
     src: url(fontes/Benguiat\ Bold.ttf);
 }

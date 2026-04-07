@@ -5,177 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Vinculo da tipografia Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Stranger Things</title>
 </head>
 <body>
-    <header>
-        <h2>GC.</h2>
-        <img src="imagens/netflix-logo.svg" alt="Logo da Netflix">
-    </header>
-
-    <main>
-        <!-- 1º seção -->
-        <section class="hero">
-            <picture>
-                <!-- Serve para renderizar imagens responsivas -->
-                 <!-- Ou seja, se a largura da tela for maior ou igual a 600px, use a imagem mobile e se não, então use a imagem desktop -->
-                 <source media="(max-width: 600px)" srcset="imagens/bg-1-mobile.webp">
-                 <img src="imagens/bg-1.webp" alt>
-            </picture>
-            <picture>
-                <source media="(max-width: 600px)" srcset="imagens/bg-2-mobile.webp">
-                <img src="imagens/bg-2.webp" alt>
-            </picture>
-
-            <!-- Div da esquerda -->
-            <div class="esquerda">
-                <h3>THE EXPERIENCE</h3>
-                <h1>STRANGER THINGS</h1>
-            </div>
-
-            <!-- Div da direita -->
-            <div class="direita">
-                <p>Descubra seus poderes e vire o herói de sua própria aventura!</p>
-                <button>
-                    ESCOLHA SUA CIDADE
-                    <img src="imagens/seta-botao.svg" alt="Seta do botão">
-                </button>
-            </div>
-        </section>
-
-        <div class="bg_monstro">
-        <!-- 2º seção -->
-        <section class="seção_cidade">
-            <div class="titulo">
-                <h2>ESCOLHA SUA CIDADE</h2>
-                <button>
-                    ESCOLHA SUA CIDADE
-                    <img src="imagens/seta-botao.svg" alt="Seta do botão">
-                </button>
-                
-            </div>
-
-            <div class="cards">
-                <div class="card">
-                    <h3>Sidney</h3>
-                    <p>INGRESSOS DISPONÍVEIS</p>
-                </div>
-
-                <div class="card">
-                    <h3>Cidade do México</h3>
-                    <p>INGRESSOS DISPONÍVEIS</p>
-                </div>
-
-                <div class="card">
-                    <h3>Yas Island</h3>
-                    <p>INGRESSOS DISPONÍVEIS</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3° seção -->
-        <section class="seção_depoimentos">
-            <div class="logotipos">
+    <!-- Divs scrollsmoother -->
+     <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- Cabeçalho -->
+            <header>
+                <h2>GC.</h2>
                 <img src="imagens/netflix-logo.svg" alt="Logo da Netflix">
-                <img src="imagens/clio-logo.svg" alt="Logo da Clio">
-                <img src="imagens/fever-logo.svg" alt="Logo da Fever">
-            </div>
+            </header>
 
-            <div class="depoimentos">
-                <div class="depoimento">
-                    <img src="imagens/img-dep1.webp" alt="Logo da empresa que fez o depoimento">
-                    <p>"Guests are immersed into an original "Stranger Things" storyline...[it] combines the special effects of a 3D Universal Studios ride with a telekinetic escape room."</p>
+            <main>
+                <!-- 1º seção -->
+                <section class="hero">
+                    <picture>
+                        <!-- Serve para renderizar imagens responsivas -->
+                        <!-- Ou seja, se a largura da tela for maior ou igual a 600px, use a imagem mobile e se não, então use a imagem desktop -->
+                        <source media="(max-width: 600px)" srcset="imagens/bg-1-mobile.webp">
+                        <img src="imagens/bg-1.webp" alt>
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="imagens/bg-2-mobile.webp">
+                        <img src="imagens/bg-2.webp" alt>
+                    </picture>
+
+                    <!-- Div da esquerda -->
+                    <div class="esquerda">
+                        <h3>THE EXPERIENCE</h3>
+                        <h1>STRANGER THINGS</h1>
+                    </div>
+
+                    <!-- Div da direita -->
+                    <div class="direita">
+                        <p>Descubra seus poderes e vire o herói de sua própria aventura!</p>
+                        <button>
+                            ESCOLHA SUA CIDADE
+                            <img src="imagens/seta-botao.svg" alt="Seta do botão">
+                        </button>
+                    </div>
+                </section>
+
+                <div class="bg_monstro">
+                <!-- 2º seção -->
+                <section class="seção_cidade">
+                    <div class="titulo">
+                        <h2>ESCOLHA SUA CIDADE</h2>
+                        <button>
+                            ESCOLHA SUA CIDADE
+                            <img src="imagens/seta-botao.svg" alt="Seta do botão">
+                        </button>
+                        
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <h3>Sidney</h3>
+                            <p>INGRESSOS DISPONÍVEIS</p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Cidade do México</h3>
+                            <p>INGRESSOS DISPONÍVEIS</p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Yas Island</h3>
+                            <p>INGRESSOS DISPONÍVEIS</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3° seção -->
+                <section class="seção_depoimentos">
+                    <div class="logotipos">
+                        <img src="imagens/netflix-logo.svg" alt="Logo da Netflix">
+                        <img src="imagens/clio-logo.svg" alt="Logo da Clio">
+                        <img src="imagens/fever-logo.svg" alt="Logo da Fever">
+                    </div>
+
+                    <div class="depoimentos">
+                        <div class="depoimento">
+                            <img src="imagens/img-dep1.webp" alt="Logo da empresa que fez o depoimento">
+                            <p>"Guests are immersed into an original "Stranger Things" storyline...[it] combines the special effects of a 3D Universal Studios ride with a telekinetic escape room."</p>
+                        </div>
+
+                        <div class="depoimento">
+                            <img src="imagens/img-dep2.webp" alt="Logo da empresa que fez o depoimento">
+                            <p>"Immerse yourself on your own adventure with Eleven, Michael, Dustin, Lucas, Max and Will for a very special episode starring none other than you."</p>
+                        </div>
+
+                        <div class="depoimento">
+                            <img src="imagens/img-dep3.webp" alt="Logo da empresa que fez o depoimento">
+                            <p>"The Stranger Things Experience is a scary, endearing, hilarious, and joyous celebration of everything we already love about the show."</p>
+                        </div>
+                    </div>
+                </section>
+                </div>
+                
+                <!-- 4° seção -->
+                <section class="seção_obrigado">
+                    <h2>OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:</h2>
+                        <ul>
+                            <li>Sidney</li>
+                            <li>Rio de Janeiro</li>
+                            <li>São Paulo</li>
+                            <li>Los Angeles</li>
+                            <li>Nova Iorque</li>
+                            <li>São Francisco</li>
+                            <li>Londres</li>
+                            <li>Atlanta</li>
+                            <li>Paris</li>
+                            <li>Toronto</li>
+                            <li>Seattle</li>
+                        </ul>
+                </section>
+            </main>
+
+            <!-- Rodapé -->
+            <footer>
+                <div class="conteúdo_footer">
+                    <div class="logo_footer">
+                        <h3>THE EXPERIENCE</h3>
+                        <H2>STRANGER THINGS</H2>
+                    </div>
+
+                    <div class="seções_footer">
+                    <div class="social">
+                        <h3>REDES SOCIAIS</h3>
+                        <ul>
+                            <li>
+                                <img src="imagens/footer-facebook.svg" alt="Logo do Facebook">
+                            </li>
+                            <li>
+                                <img src="imagens/footer-instagram.svg" alt="Logo do Instagram">
+                            </li>
+                            <li>
+                                <img src="imagens/footer-twitter.svg" alt="Logo do Twitter">
+                            </li>
+                        </ul>
+                    </div>
+
+                        <div class="parceiro">
+                            <h3>PARCEIRO DE MÍDIA</h3>
+                            <img src="imagens/footer-parceiro.svg" alt="Logo da empresa parceira">
+                        </div>
+
+                        <div class="institucional">
+                            <h3>INSTITUCIONAL</h3>
+                            <nav>
+                            <ul>
+                                <li>Contato</li>
+                                <li>Imprensa</li>
+                                <li>Parcerias</li>
+                                <li>Influenciadores</li>
+                            </ul>
+                        </nav>
+                        </div >
+                        
+                    </div>
                 </div>
 
-                <div class="depoimento">
-                    <img src="imagens/img-dep2.webp" alt="Logo da empresa que fez o depoimento">
-                    <p>"Immerse yourself on your own adventure with Eleven, Michael, Dustin, Lucas, Max and Will for a very special episode starring none other than you."</p>
+                <div class="logotipos_footer">
+                    <img src="imagens/netflix-logo.svg" alt="Logo da Netflix">
+                    <img src="imagens/fever-logo.svg" alt="Logo da Fever">
                 </div>
 
-                <div class="depoimento">
-                    <img src="imagens/img-dep3.webp" alt="Logo da empresa que fez o depoimento">
-                    <p>"The Stranger Things Experience is a scary, endearing, hilarious, and joyous celebration of everything we already love about the show."</p>
+                <div class="texto_infinito">
+                    <h3>THE EXPERIENCE</h3>
+                    <h3>THE EXPERIENCE</h3>
+                    <h3>THE EXPERIENCE</h3>
                 </div>
-            </div>
-        </section>
+            </footer>
         </div>
-        
-        <!-- 4° seção -->
-        <section class="seção_obrigado">
-            <h2>OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:</h2>
-                <ul>
-                    <li>Sidney</li>
-                    <li>Rio de Janeiro</li>
-                    <li>São Paulo</li>
-                    <li>Los Angeles</li>
-                    <li>Nova Iorque</li>
-                    <li>São Francisco</li>
-                    <li>Londres</li>
-                    <li>Atlanta</li>
-                    <li>Paris</li>
-                    <li>Toronto</li>
-                    <li>Seattle</li>
-                </ul>
-        </section>
-    </main>
+     </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="conteúdo_footer">
-            <div class="logo_footer">
-                <h3>THE EXPERIENCE</h3>
-                <H2>STRANGER THINGS</H2>
-            </div>
-
-            <div class="seções_footer">
-               <div class="social">
-                <h3>REDES SOCIAIS</h3>
-                <ul>
-                    <li>
-                        <img src="imagens/footer-facebook.svg" alt="Logo do Facebook">
-                    </li>
-                    <li>
-                        <img src="imagens/footer-instagram.svg" alt="Logo do Instagram">
-                    </li>
-                    <li>
-                        <img src="imagens/footer-twitter.svg" alt="Logo do Twitter">
-                    </li>
-                </ul>
-               </div>
-
-                <div class="parceiro">
-                    <h3>PARCEIRO DE MÍDIA</h3>
-                    <img src="imagens/footer-parceiro.svg" alt="Logo da empresa parceira">
-                </div>
-
-                <div class="institucional">
-                    <h3>INSTITUCIONAL</h3>
-                    <nav>
-                    <ul>
-                        <li>Contato</li>
-                        <li>Imprensa</li>
-                        <li>Parcerias</li>
-                        <li>Influenciadores</li>
-                    </ul>
-                   </nav>
-                </div >
-                   
-            </div>
-        </div>
-
-        <div class="logotipos_footer">
-            <img src="imagens/netflix-logo.svg" alt="Logo da Netflix">
-            <img src="imagens/fever-logo.svg" alt="Logo da Fever">
-        </div>
-
-        <div class="texto_infinito">
-            <h3>THE EXPERIENCE</h3>
-            <h3>THE EXPERIENCE</h3>
-            <h3>THE EXPERIENCE</h3>
-        </div>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
