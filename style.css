@@ -68,6 +68,9 @@ button{
     background-image: url(imagens/bg-sec2.webp);
     background-position: center;
     background-size: cover;
+    z-index: 2;
+    position: relative;
+    background-color: #0C0102;
 }
 
 ul{
@@ -152,6 +155,7 @@ ul{
 
 .seção_cidade{
     flex-direction: column;
+    position: relative;
 
     .titulo{
         display: flex;
@@ -211,6 +215,9 @@ ul{
 .seção_obrigado{
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 2;
+    background-color: #0C0102;
 
     h2{
         margin-bottom: 40px;
